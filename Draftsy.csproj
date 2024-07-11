@@ -1,0 +1,575 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\fonts\poppins.ttf" />
+    <None Remove="resources\fonts\poppins_bold.ttf" />
+    <None Remove="resources\fonts\poppins_semi_bold.ttf" />
+    <None Remove="resources\fonts\roboto.ttf" />
+    <None Remove="resources\fonts\roboto_bold.ttf" />
+    <None Remove="resources\icons\accept.png" />
+    <None Remove="resources\icons\achieve.png" />
+    <None Remove="resources\icons\active.png" />
+    <None Remove="resources\icons\add.png" />
+    <None Remove="resources\icons\admin.png" />
+    <None Remove="resources\icons\archive.png" />
+    <None Remove="resources\icons\archive_remove.png" />
+    <None Remove="resources\icons\arrow.png" />
+    <None Remove="resources\icons\attachment.png" />
+    <None Remove="resources\icons\Bgfour.png" />
+    <None Remove="resources\icons\bgone.png" />
+    <None Remove="resources\icons\Bgthree.png" />
+    <None Remove="resources\icons\Bgtwo.png" />
+    <None Remove="resources\icons\calender.png" />
+    <None Remove="resources\icons\camera.png" />
+    <None Remove="resources\icons\cancel.png" />
+    <None Remove="resources\icons\cancelled.png" />
+    <None Remove="resources\icons\cart.png" />
+    <None Remove="resources\icons\chats.png" />
+    <None Remove="resources\icons\chats_fill.png" />
+    <None Remove="resources\icons\congrates.gif" />
+    <None Remove="resources\icons\create_new_password.png" />
+    <None Remove="resources\icons\current_location.png" />
+    <None Remove="resources\icons\Dchat2.png" />
+    <None Remove="resources\icons\delete.png" />
+    <None Remove="resources\icons\DeleteGel.png" />
+    <None Remove="resources\icons\DftRulesImg1.png" />
+    <None Remove="resources\icons\DotsHorizon.png" />
+    <None Remove="resources\icons\DownArrow.png" />
+    <None Remove="resources\icons\DownArrowBlack.png" />
+    <None Remove="resources\icons\down_arrow.png" />
+    <None Remove="resources\icons\drafsty.png" />
+    <None Remove="resources\icons\draftCompleted.png" />
+    <None Remove="resources\icons\draftrulesimg1.png" />
+    <None Remove="resources\icons\DrftRulesImg2.png" />
+    <None Remove="resources\icons\d_wings.png" />
+    <None Remove="resources\icons\edit.png" />
+    <None Remove="resources\icons\eye_closed.png" />
+    <None Remove="resources\icons\eye_opened.png" />
+    <None Remove="resources\icons\facebook.png" />
+    <None Remove="resources\icons\filter.png" />
+    <None Remove="resources\icons\finished.png" />
+    <None Remove="resources\icons\forgot_password.png" />
+    <None Remove="resources\icons\goal.png" />
+    <None Remove="resources\icons\google.png" />
+    <None Remove="resources\icons\heart.png" />
+    <None Remove="resources\icons\heart_fill.png" />
+    <None Remove="resources\icons\home.png" />
+    <None Remove="resources\icons\home_fill.png" />
+    <None Remove="resources\icons\horizontal_dots.png" />
+    <None Remove="resources\icons\i.png" />
+    <None Remove="resources\icons\ImagePic.png" />
+    <None Remove="resources\icons\Join1.png" />
+    <None Remove="resources\icons\Join2.png" />
+    <None Remove="resources\icons\Join3.png" />
+    <None Remove="resources\icons\leagues.png" />
+    <None Remove="resources\icons\leagues_fill.png" />
+    <None Remove="resources\icons\Letter.png" />
+    <None Remove="resources\icons\lists.png" />
+    <None Remove="resources\icons\listsDialog.png" />
+    <None Remove="resources\icons\live.png" />
+    <None Remove="resources\icons\live_fill.png" />
+    <None Remove="resources\icons\LockthreeLines.png" />
+    <None Remove="resources\icons\logo.png" />
+    <None Remove="resources\icons\logout.png" />
+    <None Remove="resources\icons\map.png" />
+    <None Remove="resources\icons\menu.png" />
+    <None Remove="resources\icons\message.png" />
+    <None Remove="resources\icons\myLists.png" />
+    <None Remove="resources\icons\next_badge.png" />
+    <None Remove="resources\icons\nonSelected.png" />
+    <None Remove="resources\icons\notification.png" />
+    <None Remove="resources\icons\no_image_avatar.png" />
+    <None Remove="resources\icons\pen.png" />
+    <None Remove="resources\icons\playoff.png" />
+    <None Remove="resources\icons\points.png" />
+    <None Remove="resources\icons\profile.png" />
+    <None Remove="resources\icons\qr.png" />
+    <None Remove="resources\icons\qr_code.png" />
+    <None Remove="resources\icons\raanking.png" />
+    <None Remove="resources\icons\reject.png" />
+    <None Remove="resources\icons\reset_password.png" />
+    <None Remove="resources\icons\RightArrow.png" />
+    <None Remove="resources\icons\right_arrow.png" />
+    <None Remove="resources\icons\search.png" />
+    <None Remove="resources\icons\searchDialog.png" />
+    <None Remove="resources\icons\searchGlass.png" />
+    <None Remove="resources\icons\selected.png" />
+    <None Remove="resources\icons\send.png" />
+    <None Remove="resources\icons\settings.png" />
+    <None Remove="resources\icons\stats.png" />
+    <None Remove="resources\icons\teams.png" />
+    <None Remove="resources\icons\teams_fill.png" />
+    <None Remove="resources\icons\threedotHori.png" />
+    <None Remove="resources\icons\threeDotsHorizon.png" />
+    <None Remove="resources\icons\timer.png" />
+    <None Remove="resources\icons\triangle.png" />
+    <None Remove="resources\icons\trophy.gif" />
+    <None Remove="resources\icons\TrophyCreate.png" />
+    <None Remove="resources\icons\TrophyPlayer.png" />
+    <None Remove="resources\icons\twoPapers.png" />
+    <None Remove="resources\icons\UpArrow.png" />
+    <None Remove="resources\icons\vertical_dots.png" />
+    <None Remove="resources\icons\week.png" />
+    <None Remove="resources\icons\won_badge.png" />
+    <None Remove="utils\" />
+    <None Remove="BarcodeScanner.XF" />
+    <None Remove="Plugin.FirebasePushNotification" />
+    <None Remove="resources\congrates.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\congrates.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\fonts\poppins.ttf" />
+    <EmbeddedResource Include="resources\fonts\poppins_bold.ttf" />
+    <EmbeddedResource Include="resources\fonts\poppins_semi_bold.ttf" />
+    <EmbeddedResource Include="resources\fonts\roboto.ttf" />
+    <EmbeddedResource Include="resources\fonts\roboto_bold.ttf" />
+    <EmbeddedResource Include="resources\icons\accept.png" />
+    <EmbeddedResource Include="resources\icons\achieve.png" />
+    <EmbeddedResource Include="resources\icons\active.png" />
+    <EmbeddedResource Include="resources\icons\add.png" />
+    <EmbeddedResource Include="resources\icons\admin.png" />
+    <EmbeddedResource Include="resources\icons\archive.png" />
+    <EmbeddedResource Include="resources\icons\archive_remove.png" />
+    <EmbeddedResource Include="resources\icons\arrow.png" />
+    <EmbeddedResource Include="resources\icons\attachment.png" />
+    <EmbeddedResource Include="resources\icons\Bgfour.png" />
+    <EmbeddedResource Include="resources\icons\bgone.png" />
+    <EmbeddedResource Include="resources\icons\Bgthree.png" />
+    <EmbeddedResource Include="resources\icons\Bgtwo.png" />
+    <EmbeddedResource Include="resources\icons\calender.png" />
+    <EmbeddedResource Include="resources\icons\camera.png" />
+    <EmbeddedResource Include="resources\icons\cancel.png" />
+    <EmbeddedResource Include="resources\icons\cancelled.png" />
+    <EmbeddedResource Include="resources\icons\cart.png" />
+    <EmbeddedResource Include="resources\icons\chats.png" />
+    <EmbeddedResource Include="resources\icons\chats_fill.png" />
+    <EmbeddedResource Include="resources\icons\congrates.gif" />
+    <EmbeddedResource Include="resources\icons\create_new_password.png" />
+    <EmbeddedResource Include="resources\icons\current_location.png" />
+    <EmbeddedResource Include="resources\icons\Dchat2.png" />
+    <EmbeddedResource Include="resources\icons\delete.png" />
+    <EmbeddedResource Include="resources\icons\DeleteGel.png" />
+    <EmbeddedResource Include="resources\icons\DftRulesImg1.png" />
+    <EmbeddedResource Include="resources\icons\DotsHorizon.png" />
+    <EmbeddedResource Include="resources\icons\DownArrow.png" />
+    <EmbeddedResource Include="resources\icons\DownArrowBlack.png" />
+    <EmbeddedResource Include="resources\icons\down_arrow.png" />
+    <EmbeddedResource Include="resources\icons\drafsty.png" />
+    <EmbeddedResource Include="resources\icons\draftCompleted.png" />
+    <EmbeddedResource Include="resources\icons\draftrulesimg1.png" />
+    <EmbeddedResource Include="resources\icons\DrftRulesImg2.png" />
+    <EmbeddedResource Include="resources\icons\d_wings.png" />
+    <EmbeddedResource Include="resources\icons\edit.png" />
+    <EmbeddedResource Include="resources\icons\eye_closed.png" />
+    <EmbeddedResource Include="resources\icons\eye_opened.png" />
+    <EmbeddedResource Include="resources\icons\facebook.png" />
+    <EmbeddedResource Include="resources\icons\filter.png" />
+    <EmbeddedResource Include="resources\icons\finished.png" />
+    <EmbeddedResource Include="resources\icons\forgot_password.png" />
+    <EmbeddedResource Include="resources\icons\goal.png" />
+    <EmbeddedResource Include="resources\icons\google.png" />
+    <EmbeddedResource Include="resources\icons\heart.png" />
+    <EmbeddedResource Include="resources\icons\heart_fill.png" />
+    <EmbeddedResource Include="resources\icons\home.png" />
+    <EmbeddedResource Include="resources\icons\home_fill.png" />
+    <EmbeddedResource Include="resources\icons\horizontal_dots.png" />
+    <EmbeddedResource Include="resources\icons\i.png" />
+    <EmbeddedResource Include="resources\icons\ImagePic.png" />
+    <EmbeddedResource Include="resources\icons\Join1.png" />
+    <EmbeddedResource Include="resources\icons\Join2.png" />
+    <EmbeddedResource Include="resources\icons\Join3.png" />
+    <EmbeddedResource Include="resources\icons\leagues.png" />
+    <EmbeddedResource Include="resources\icons\leagues_fill.png" />
+    <EmbeddedResource Include="resources\icons\Letter.png" />
+    <EmbeddedResource Include="resources\icons\lists.png" />
+    <EmbeddedResource Include="resources\icons\listsDialog.png" />
+    <EmbeddedResource Include="resources\icons\live.png" />
+    <EmbeddedResource Include="resources\icons\live_fill.png" />
+    <EmbeddedResource Include="resources\icons\LockthreeLines.png" />
+    <EmbeddedResource Include="resources\icons\logo.png" />
+    <EmbeddedResource Include="resources\icons\logout.png" />
+    <EmbeddedResource Include="resources\icons\map.png" />
+    <EmbeddedResource Include="resources\icons\menu.png" />
+    <EmbeddedResource Include="resources\icons\message.png" />
+    <EmbeddedResource Include="resources\icons\myLists.png" />
+    <EmbeddedResource Include="resources\icons\next_badge.png" />
+    <EmbeddedResource Include="resources\icons\nonSelected.png" />
+    <EmbeddedResource Include="resources\icons\notification.png" />
+    <EmbeddedResource Include="resources\icons\no_image_avatar.png" />
+    <EmbeddedResource Include="resources\icons\pen.png" />
+    <EmbeddedResource Include="resources\icons\playoff.png" />
+    <EmbeddedResource Include="resources\icons\points.png" />
+    <EmbeddedResource Include="resources\icons\profile.png" />
+    <EmbeddedResource Include="resources\icons\qr.png" />
+    <EmbeddedResource Include="resources\icons\qr_code.png" />
+    <EmbeddedResource Include="resources\icons\raanking.png" />
+    <EmbeddedResource Include="resources\icons\reject.png" />
+    <EmbeddedResource Include="resources\icons\reset_password.png" />
+    <EmbeddedResource Include="resources\icons\RightArrow.png" />
+    <EmbeddedResource Include="resources\icons\right_arrow.png" />
+    <EmbeddedResource Include="resources\icons\search.png" />
+    <EmbeddedResource Include="resources\icons\searchDialog.png" />
+    <EmbeddedResource Include="resources\icons\searchGlass.png" />
+    <EmbeddedResource Include="resources\icons\selected.png" />
+    <EmbeddedResource Include="resources\icons\send.png" />
+    <EmbeddedResource Include="resources\icons\settings.png" />
+    <EmbeddedResource Include="resources\icons\stats.png" />
+    <EmbeddedResource Include="resources\icons\teams.png" />
+    <EmbeddedResource Include="resources\icons\teams_fill.png" />
+    <EmbeddedResource Include="resources\icons\threedotHori.png" />
+    <EmbeddedResource Include="resources\icons\threeDotsHorizon.png" />
+    <EmbeddedResource Include="resources\icons\timer.png" />
+    <EmbeddedResource Include="resources\icons\triangle.png" />
+    <EmbeddedResource Include="resources\icons\trophy.gif" />
+    <EmbeddedResource Include="resources\icons\TrophyCreate.png" />
+    <EmbeddedResource Include="resources\icons\TrophyPlayer.png" />
+    <EmbeddedResource Include="resources\icons\twoPapers.png" />
+    <EmbeddedResource Include="resources\icons\UpArrow.png" />
+    <EmbeddedResource Include="resources\icons\vertical_dots.png" />
+    <EmbeddedResource Include="resources\icons\week.png" />
+    <EmbeddedResource Include="resources\icons\won_badge.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ColorPicker.Xamarin.Forms" Version="1.3.4.21" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Plugin.FirebaseAnalytics" Version="4.1.0" />
+    <PackageReference Include="Plugin.FirebaseCrashlytics" Version="4.1.0" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2478" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="BarcodeScanner.XF" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v12.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="pages\detail\MyLeagueDetail\SelectScheduleWeekDialog.xaml.cs">
+      <DependentUpon>SelectScheduleWeekDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="pages\sign_up\SignUpPage.xaml.cs">
+      <DependentUpon>SignUpPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="dialogs\BlocDeleteDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\BlockConfirmationDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ChatRequestSendDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ColorPickerDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\FilterDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\FullFormDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ImageDetailDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\LeagueJoinDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\LeagueOptionsDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ListDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\MenuDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\PlayerDetailDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ReportOtherDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ReportSelectionDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\SelectionDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="dialogs\ViewDraftTeamDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="helpers\CommonLoader.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\Business\events\EventsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\common\CommonHeader.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\common\PointsBreakDownItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\common\ScheduleItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\ChatsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\DashPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\LeaguePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\LivePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\dashboard\TeamsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\chatDetail\ChatDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\chatDetail\ChatRequestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\chatDetail\SearchUserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\ConferenceDetail\ConferenceDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\myCalender\MycalenderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\MyLeagueDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\SelectScheduleWeekDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\SignleSchedulePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\StandingItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\StandingWeekItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\WeeklyItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\MyLeagueDetail\WeeklySubItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\NationalRankingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\NotificationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\QrCodeScannerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\stats\StatsBreakdownPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\detail\TeamDetail\TeamDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\createDraftDay\CongratzPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\createDraftDay\CreateDraftDayPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\create\CreateLeaguePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\chat\DraftChatPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\DraftHomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\list\DraftListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\list\SelectListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftLobby\DraftLobbyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\DraftRule\DraftRules.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\draft\DraftLeaguePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\Invitation\InvitationLeaguePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\Invitation\InviteUserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\Invitation\UserLeagueInvitationsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\location\LocationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\past\PastLeaguePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\point\PointSystemPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\search\MapSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\search\SearchForLeaguePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\league\draftDash\teamSearch\DraftTeamSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\list\CreateListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\list\ListDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\list\MyListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\list\SelectedTeamPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\list\SelectTeamPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\onboarding\create\OnboardingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\onboarding\joinLeague\JoinLeagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\onboarding\SplashPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\profile\OptionsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\profile\PlayerProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\profile\ProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\profile\QrPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\DeleteAccountPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\DisplayNamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\NofiticationsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\PrivacyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\SubscriptionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\SupportPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\settings\TermsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\AddPicPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\CongratesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\forgot_password\CreatePasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\EnterCodePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\forgot_password\ForgotPasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\login\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\forgot_password\ResetPasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\EnterEmaiPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\HowWorksPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\JoinLeaguePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\sign_up\SignUpPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ImageCropper\ImageCropper\ImageCropper.csproj" />
+    <ProjectReference Include="..\..\Calendar.Plugin\CalendarPlugin.csproj" />
+  </ItemGroup>
+</Project>
